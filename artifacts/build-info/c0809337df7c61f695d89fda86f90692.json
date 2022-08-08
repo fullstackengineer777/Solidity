@@ -1,0 +1,83 @@
+{
+	"id": "c0809337df7c61f695d89fda86f90692",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"SendingEther.sol": {
+				"content": "// How to send Ether?\r\n// You can send Ether to other contracts by\r\n\r\n// transfer (2300 gas, throws error)\r\n// send (2300 gas, returns bool)\r\n// call (forward all gas or set gas, returns bool)\r\n// How to receive Ether?\r\n// A contract receiving Ether must have at least one of the functions below\r\n\r\n// receive() external payable\r\n// fallback() external payable\r\n// receive() is called if msg.data is empty, otherwise fallback() is called.\r\n\r\n// Which method should you use?\r\n// call in combination with re-entrancy guard is the recommended method to use after December 2019.\r\n\r\n// Guard against re-entrancy by\r\n// -making all state changes before calling other contracts\r\n// -using re-entrancy guard modifier\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> SendingEther.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "SendingEther.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"\n--> SendingEther.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "SendingEther.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"SendingEther.sol": {
+				"ast": {
+					"absolutePath": "SendingEther.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "714:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

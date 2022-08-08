@@ -1,0 +1,325 @@
+{
+	"id": "43b91853ffd40f404619cbc4392e235a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Payable.sol": {
+				"content": "// Payable\r\n// Functions and addresses declared payable can receive ether into the contract.\r\n\r\n\r\n//SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.7;\r\n\r\ncontract Payable{\r\n    // Payable address can receive Ether\r\n    \r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Payable.sol": {
+				"Payable": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Payable.sol\":157:225  contract Payable{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Payable.sol\":157:225  contract Payable{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220e02011127f266bb86ee2317c53ea07e80f3f94de7675e665074cc22cc4c5f80f64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e02011127f266bb86ee2317c53ea07e80f3f94de7675e665074cc22cc4c5f80f64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE0 KECCAK256 GT SLT PUSH32 0x266BB86EE2317C53EA07E80F3F94DE7675E665074CC22CC4C5F80F64736F6C63 NUMBER STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "157:68:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220e02011127f266bb86ee2317c53ea07e80f3f94de7675e665074cc22cc4c5f80f64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE0 KECCAK256 GT SLT PUSH32 0x266BB86EE2317C53EA07E80F3F94DE7675E665074CC22CC4C5F80F64736F6C63 NUMBER STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "157:68:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 157,
+									"end": 225,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220e02011127f266bb86ee2317c53ea07e80f3f94de7675e665074cc22cc4c5f80f64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 157,
+											"end": 225,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Payable.sol\":\"Payable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Payable.sol\":{\"keccak256\":\"0xf0f8bde88cf7058bf18d147a381eada541239dc2a67c287c1d92cedf6f71cab6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c42a8c2c6eac2a9c0f35df051c3304adc71807b2842e2524992bb85296d56900\",\"dweb:/ipfs/QmQt3WTWJ5NDLEkQtKJ4HH2amP26LxpW7FSvWhv8GNuNat\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Payable.sol": {
+				"ast": {
+					"absolutePath": "Payable.sol",
+					"exportedSymbols": {
+						"Payable": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "130:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "Payable",
+							"nameLocation": "166:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "157:68:0",
+							"usedErrors": []
+						}
+					],
+					"src": "130:97:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

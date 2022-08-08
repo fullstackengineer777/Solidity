@@ -1,0 +1,68 @@
+{
+	"id": "17a0ed5e73e27188bb422ab7afa20765",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Error.sol": {
+				"content": "// An error will undo all changes made to the state during a transaction.\r\n\r\n// You can throw an error by calling require, revert or assert.\r\n\r\n// require is used to validate inputs and conditions before execution.\r\n// revert is similar to require. See the code below for details.\r\n// assert is used to check for code that should never be false. Failing assertion probably means that there is a bug.\r\n\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.7;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"Error.sol": {
+				"ast": {
+					"absolutePath": "Error.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "436:23:0"
+						}
+					],
+					"src": "436:51:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
