@@ -1,0 +1,33 @@
+We've renamed our packages
+We've renamed *ganache-cli and ganache-core to ganache. You'll need to uninstall the old version before installing the new.
+
+For a global installation uninstall ganache-cli before installing ganache:
+
+$ npm uninstall ganache-cli --global
+$ npm install ganache@alpha --global
+For a local installation of ganache-cli and/or ganache-core:
+
+$ npm uninstall ganache-core ganache-cli
+$ npm install ganache@alpha
+You can now use the new ganache (without the -cli suffix) on the command line:
+
+$ ganache # use `npx ganache` if you installed locally
+
+
+
+/***************** truffle **************/
+- https://github.com/trufflesuite/ganache-ui/tags          and download.
+- 
+- npm install -g truffle
+- C:\Users\XXXX\AppData\Roaming\npm rename truffle.cmd to truff.cmd
+- mkdir greeter
+- cd greeter
+- truffle init
+- truff compile
+- truff migrate
+  at this stage , smart contract has been deployed.
+- truff console
+  greeter.address
+  greeter.at(greeter.address).greet()
+  greeter.at(greeter.address).setGreeting('change greeting value')
+
